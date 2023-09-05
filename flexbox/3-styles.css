@@ -1,4 +1,3 @@
-
 /* SUMMARY
     1. GLOBAL
     2. LAYOUT
@@ -180,7 +179,8 @@
   
   /* Grid
       ============================= */
-  .row {
+  
+  .row{
     display: flex;
   }
 
@@ -192,6 +192,7 @@
   
 
   [class*='col-'] {
+   
     padding: 0.5rem;
   }
   
@@ -373,19 +374,17 @@
   }
 
   /* Section Latest news ============================= */
-.section-latest-news{
-  display: flex;
-  flex-direction: row-reverse;
-}
+  
+  .section-latest-news .row {
+    flex-direction: row-reverse;
+  }
 
-/* Section SERVICES ============================= */
-.section-services{
-  display: flex;
-  flex-wrap: wrap;
-}
+  /* Section SERVICES ============================= */
 
-
-
+  .section-services .row {
+    flex-wrap: wrap;
+  }
+  
   /*** 4. CARD ***/
   
   /* Card (all styles)
@@ -513,4 +512,3 @@
     font-size: 10rem;
     z-index: -1;
   }
-    
